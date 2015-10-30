@@ -1,0 +1,17 @@
+body {
+     background-image:url(http://img1.mxstatic.com/wallpapers/1e72debc20e440bf04fbd6b827c3b93d_large.jpeg);
+     background-attachement: fixed;
+     background-size: 100%;
+}
+
+#container {
+           background-color: #45697f;
+           border: solid #0e1c29 5px;
+           position: absolute;
+           border-radius: 10px;
+           left: 25px;
+           padding-left: 10px;
+           padding-bottom: 10px;
+           padding-right: 10px;
+}
+
