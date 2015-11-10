@@ -1,21 +1,45 @@
 body {
-     background-image:url(http://img.jeuxvideo.fr/photo/02154196-photo-final-fantasy-xiii.jpg);
-     background-attachment: fixed;
-     background-size: 100%;
-     background-repeat: no-repeat;
+  background-color: red;
 }
 
-#container {
-           background-color: #c6cbce;
-           border: solid #411d1f 5px;
-           position: absolute;
-           border-radius: 10px;
-           left: 50px;
-           padding-left: 10px;
-           padding-bottom: 10px;
-           padding-right: 10px;
+@media screen and (max-width: 1024px) {
+  body{
+    background: lightgrey;
+  }
 }
 
-.Shadow {
-     font-weight: bold;
+section {
+  background-color: white;
+  border: solid white .312em;
+  border-radius: .625em;
+  margin-bottom: 3%;
+}
+
+span {
+  background: black;
+  color: white;
+  border: solid black;
+  border-radius: .625em
+}
+
+li {
+  padding-bottom: 1.5%;
+}
+
+@media screen and (max-width: 1024px) {
+  li {
+    padding-bottom: 1.5%;
+    font-size: 4em;
+  }
+}
+
+article {
+  text-align: center;
+  list-style: none;
+}
+
+@media screen and (max-width: 1024px) {
+  article h2 {
+    font-size: 3em;
+  }
 }
