@@ -1,210 +1,94 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="style.css">
-    <title>Vim</title>
-  </head>
-  <body>
-    <img src="http://www.ptitnico.net/wp-content/uploads/2013/05/Vim-editor_logo.png" height="150px" width="350px">
-    <div id="container">
-    <table border="1px">
-      <thead>
-        <th>Commande</th>
-        <th>Action</th>
-      </thead>
-      <tbody>
-        <caption class="Shadow">Se déplacer</caption>
-        <tr>
-          <td>h</td>
-          <td>Déplacer le curseur vers la gauche</td>
-        </tr>
-        <tr>
-          <td>j</td>
-          <td>Déplacer le curseur vers le bas</td>
-        </tr>
-        <tr>
-          <td>k</td>
-          <td>Déplacer le curseur vers le haut</td>
-        </tr>
-        <tr>
-          <td>l</td>
-          <td>Déplacer le curseur vers la droite</td>
-        </tr>
-        <tr>
-          <td>w</td>
-          <td>place le curseur au début d'un mot</td>
-        </tr>
-        <tr>
-          <td>e</td>
-          <td>Place le curseur a la fin d'un mot</td>
-        </tr>
-        <tr>
-          <td>b</td>
-          <td>Déplace le curseur en arrière au début d'un mot</td>
-        </tr>
-      <tr>
-        <td>0</td>
-        <td>Ramène en début de ligne</td>
-      </tr>
-      <tr>
-        <td>$</td>
-        <td>Ramène en fin de ligne</td>
-      </tr>
-      <tr>
-        <td>G</td>
-        <td>Amène a la dernière ligne du document</td>
-      </tr>
-      <tr>
-        <td>n°+G</td>
-        <td>Amène aux numéro de ligne choisit</td>
-      </tr>
-      </tbody>
-    </table>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <title>Vim</title>
+</head>
+<body>
+  <img src="http://www.ptitnico.net/wp-content/uploads/2013/05/Vim-editor_logo.png" height="150px" width="350px">
 
-    <table border="1px">
-      <thead>
-        <th>Commande</th>
-        <th>Action</th>
-      </thead>
-      <tbody>
-        <caption class="Shadow">Insertion<caption>
-          <tr>
-            <td>i</td>
-            <td>Insère avant le curseur</td>
-          </tr>
-          <tr>
-            <td>I</td>
-            <td>Insère au début d'une ligne</td>
-          </tr>
-          <tr>
-            <td>a</td>
-            <td>Ajouter</td>
-          </tr>
-          <tr>
-            <td>A</td>
-            <td>Ajouter en fin de ligne</td>
-          </tr>
-          <tr>
-            <td>o</td>
-            <td>Ajoute un nouvelle ligne en dessous</td>
-          </tr>
-          <tr>
-            <td>ea</td>
-            <td>Ajoute à la fin d'un mot</td>
-          </tr>
-          <tr>
-            <td>Esc</td>
-            <td>Sortir du mode insertion</td>
-          </tr>
-      </tbody>
-    </table>
+  <section>
+    <article>
 
-    <table border="1px">
-      <thead>
-        <th>Commande</th>
-        <th>Action</th>
-      </thead>
-      <tbody>
-        <caption class="Shadow">Edition</caption>
-        <tr>
-          <td>r</td>
-          <td>Remplacer un caractère</td>
-        </tr>
-        <tr>
-          <td>J</td>
-          <td>Fusionne la ligne du dessous</td>
-        </tr>
-        <tr>
-          <td>cc</td>
-          <td>Remplace la ligne entière</td>
-        </tr>
-        <tr>
-          <td>cw</td>
-          <td>Remplace un mot</td>
-        </tr>
-        <tr>
-          <td>c$</td>
-          <td>Remplace une ligne</td>
-        </tr>
-        <tr>
-          <td>u</td>
-          <td>Annule la dernière action</td>
-        </tr>
-        <tr>
-          <td>Ctrl+r</td>
-          <td>Refait les commandes précédement taper</td>
-        </tr>
-      </tbody>
-      </table>
+    <h2>Se déplacer</h2>
 
-      <table border="1px">
-        <thead>
-          <th>Commande</th>
-          <th>Action</th>
-        </thead>
-        <tbody>
-          <caption class="Shadow">Copier/Coller<caption>
-            <tr>
-              <td>yy</td>
-              <td>Copie une ligne</td>
-            </tr>
-            <tr>
-              <td>2yy</td>
-              <td>Copie 2 lignes</td>
-            </tr>
-            <tr>
-              <td>yw</td>
-              <td>Copie un mot</td>
-              <tr>
-                <td>p</td>
-                <td>Colle après le curseur</td>
-              </tr>
-              <tr>
-                <td>P</td>
-                <td>Colle avant le curseur</td>
-              </tr>
-              <tr>
-                <td>dd</td>
-                <td>Coupe un ligne</td>
-              </tr>
-              <tr>
-                <td>dw</td>
-                <td>Coupe un mot</td>
-              </tr>
-              <tr>
-                <td>x</td>
-                <td>Coupe un caractère</td>
-              </tr>
-        </tbody>
-      </table>
+      <li><code>h</code> Se déplacer vers la gauche</li>
+      <li><code>j</code> Se déplacer vers le bas</li>
+      <li><code>k</code> Se déplacer vers le haut</li>
+      <li><code>l</code> Se déplacer vers la droite</li>
+      <li><code>w</code> Place le curseur en début de mot</li>
+      <li><code>e</code> Place le curseur à la fin d'un mot</li>
+      <li><code>b</code> Déplace le curseur (en arrière) en fin de mot</li>
+      <li><code>0</code> Ramène en début de ligne</li>
+      <li><code>$</code> Ramène en fin de ligne</li>
+      <li><code>G</code> Amène à la dernière ligne du document</li>
+      <li><code>n°+G</code> Amène aux numéro de ligne choisit</li>
 
-      <table border="1px">
-        <thead>
-          <th>Commande</th>
-          <th>Action</th>
-        </thead>
-        <tbody>
-          <caption class="Shadow">Sortir/Sauvegarder</caption>
+    </article>
+  </section>
 
-          <tr>
-            <td>:w</td>
-            <td>Sauvegarde</td>
-          </tr>
-          <tr>
-            <td>:wq ou :x ou ZZ</td>
-            <td>sauvegarder et quitte</td>
-          </tr>
-          <tr>
-            <td>:q</td>
-            <td>Quitte sans sauvegarder</td>
-          </tr>
-          <tr>
-            <td>:q! ou ZQ</td>
-            <td>Quitte sans sauvegarder</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </body>
+<section>
+  <article>
+
+   <h2>Insertion</h2>
+
+    <li><code>i</code> Insère avant le curseur</li>
+    <li><code>I</code> Insère en début de ligne</li>
+    <li><code>a</code> Ajouter</li>
+    <li><code>A</code> Ajouter en fin de ligne</li>
+    <li><code>o</code> Ajoute une nouvelle ligne en dessous</li>
+    <li><code>ea</code> Ajoute à la fin d'un mot</li>
+    <li><code>Esc</code> Sortir du mode insertion</li>
+
+  </article>
+</section>
+
+<section>
+  <article>
+
+   <h2>Edition</h2>
+
+    <li><code>r</code> Remplacer un caractère</li>
+    <li><code>J</code> Fusionne la ligne du dessous</li>
+    <li><code>cc</code> Remplace la ligne entière</li>
+    <li><code>cw</code> Remplace un mot</li>
+    <li><code>c$</code> Remplace une ligne</li>
+    <li><code>u</code> Annule la dernière action</li>
+    <li><code>Ctrl+r</code> Refait les commandes précédentes</li>
+
+  </article>
+</section>
+
+<section>
+  <article>
+
+    <h2>Copier/Coller</h2>
+
+      <li><code>yy</code> Copie une ligne</li>
+      <li><code>2yy</code> Copie 2 lignes</li>
+      <li><code>yw</code> Copie un mot</li>
+      <li><code>p</code> Colle avant le curseur</li>
+      <li><code>P</code> Coller après le curseur</li>
+      <li><code>dd</code> Coupe une ligne</li>
+      <li><code>dw</code> Coupe un mot</li>
+      <li><code>x</code> Coupe un caractère</li>
+
+  </article>
+</section>
+
+<section>
+  <article>
+
+    <h2>Sortir/Sauvegarder</h2>
+
+      <li><code>:w</code> Sauvergarde</li>
+      <li><code>:wq ou :x ou ZZ</code> Sauvegarde et quitte</li>
+      <li><code>:q</code> Quitter sans sauvergarder</li>
+      <li><code>:q! ou ZQ</code> Quitter sans sauvergarder ni enregistrer</li>
+
+  </article>
+</section>
+
+</body>
 </html>
